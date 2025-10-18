@@ -75,7 +75,7 @@ docker ps
 ```
 
 And you should see 3 containers running
-<img src="Pasted image 20251007134243.png" class="wikilink"
+<img src="Bloodhound CE Installation-media/Pasted image 20251007134243.png" class="wikilink"
 alt="Pastedimage20251007134243.png" />
 It also spat out a long complicated password for neo4j in the terminal, by installing the bloodhound-cli, this can easily be reset:
 
@@ -94,7 +94,7 @@ More commands here:
 The app is hosted on localhost port 8080
 
 login with 'admin' and the long complicated password
-<img src="Pasted image 20251007135432.png" class="wikilink"
+<img src="Bloodhound CE Installation-media/Pasted image 20251007135432.png" class="wikilink"
 alt="Pastedimage20251007135432.png" />
 You will then be prompted to reset password
 Remember the password..
