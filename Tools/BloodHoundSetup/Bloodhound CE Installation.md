@@ -4,11 +4,19 @@ Installation of Bloodhound CE on Kali linux using docker
 
 Has a debian package or you can install the latest version from [docker](https://docs.docker.com/desktop/setup/install/linux/)
 
-    sudo apt install docker.io
+``` bash
+sudo apt update
+```
+
+``` bash
+sudo apt install docker.io
+```
 
 Also install docker-compose (orchestrate the installation of various databases for bloodhound)
 
-    sudo apt install docker-compose
+``` bash
+sudo apt install docker-compose
+```
 
 ## Check installation
 
@@ -30,7 +38,14 @@ Verify its running
     └─$ sudo docker ps             
     CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 
-## Change docker group prvileges
+## Change docker group privileges
+
+make a docker group
+
+``` bash
+newgrp docker
+id -nG
+```
 
 So you don't need sudo to start containers
 
@@ -75,9 +90,15 @@ docker ps
 ```
 
 And you should see 3 containers running
-<img src="Bloodhound CE Installation-media/Pasted image 20251007134243.png" class="wikilink"
+<img src="Pasted image 20251007134243.png" class="wikilink"
 alt="Pastedimage20251007134243.png" />
-It also spat out a long complicated password for neo4j in the terminal, by installing the bloodhound-cli, this can easily be reset:
+Also check that the cli is working (command also set up things..)
+
+``` bash
+./bloodhound-cli check
+```
+
+During installation, it also spat out a long complicated password for neo4j in the terminal, by installing the bloodhound-cli, this can easily be reset:
 
 ``` bash
 ./bloodhound-cli resetpwd
@@ -94,7 +115,7 @@ More commands here:
 The app is hosted on localhost port 8080
 
 login with 'admin' and the long complicated password
-<img src="Bloodhound CE Installation-media/Pasted image 20251007135432.png" class="wikilink"
+<img src="Pasted image 20251007135432.png" class="wikilink"
 alt="Pastedimage20251007135432.png" />
 You will then be prompted to reset password
 Remember the password..
