@@ -1,4 +1,6 @@
 # BerkeleyHackingClub
+![The CyBear!](/Cyber Bear.png "A cybernetic bear")
+
 BHC's very own repo!
 Here is the file structure:
 
