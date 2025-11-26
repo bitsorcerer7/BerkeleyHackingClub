@@ -1,5 +1,5 @@
 # BerkeleyHackingClub
-![The CyBear!](/Cyber Bear.png "A cybernetic bear")
+![The CyBear](https://github.com/bitsorcerer7/BerkeleyHackingClub/blob/main/Cyber%20Bear.png "A cybernetic bear")
 
 BHC's very own repo!
 Here is the file structure:
